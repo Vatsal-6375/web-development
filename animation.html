@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation in CSS</title>
+    <style>
+       #btn1 {
+            background-color: #e21111;
+            color: violet;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            border-radius: 4px;
+        
+        }
+        #btn2{
+            background-color:blue;
+            color: rgb(127, 100, 153);
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            border-radius: 4px;
+            ;
+        }
+         #btn3{
+            background-color:gold;
+            color: rgb(52, 9, 93);
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            border-radius: 4px;
+        }
+        #btn1:hover{
+           background-color:blue; 
+        }
+        #btn2:active{
+            background-color: red;
+        }
+        #btn3:active{
+            background-color: red;}
+        #btn1:active{
+            transform: rotate(10deg);
+        }
+        #btn2:active{
+            transform: scale(10);
+        } 
+        #btn3:active{
+            transform: translate(50px);
+        }  
+        #btn4{
+            background-color: rgb(127, 100, 153);
+            color: white;
+            border:none;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 25px;
+            border-radius: 4px;
+            outline:none;
+            width:100px;
+            padding:10px;
+
+        }  
+       #btn4 span::after{
+            content: "\2601";
+            margin-left: 10px;
+            opacity: 0;
+           
+        }
+        #btn4 span:hover::after{
+            opacity: 1;
+        }
+
+    </style>
+
+</head>
+<body>
+    <button id="btn1">Rotate</button>
+    <button id="btn2">Zoom</button>
+    <button id="btn3">Translate</button>
+    <button id="btn4"><span>Winter</span></button>
+    
+</body>
+</html>

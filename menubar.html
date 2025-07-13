@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu bar</title>
+    <style>
+        
+        .cdiv1 {
+            width: 100%;
+            height: 50px;
+            background-color: black;
+           
+        }
+        .cdiv1 a {
+            color: white;
+            text-decoration: none;
+            padding: 15px 20px;
+            font-size: 22px;
+            
+        }
+         .cdiv2 {
+            
+           
+            background-color: black;
+            margin-top: 20px;
+
+            
+            
+        }
+        .cdiv2 a {
+            display: block; /* Converts inline elements to block */
+            width: 100%;
+            
+            color: white;
+            text-decoration: none;
+            padding: 15px 20px;
+            font-size: 22px; 
+        }
+        .cdiv3 {
+            width: 100%;
+            
+           
+            background-color: black;
+            margin-top: 20px;
+            overflow: hidden; /* Clear floats */
+            
+            
+        }
+
+           
+     
+       .cdiv3 a {
+            display: block; /* Converts inline elements to block */
+            float: left;
+            
+            
+            color: white;
+            text-decoration: none;
+            padding: 15px 20px;
+            font-size: 22px; 
+           
+        }
+        .cdiv4 {
+             width: 100%;
+            height: 50px;
+            
+           
+            background-color: black;
+            margin-top: 20px;
+            overflow: hidden; /* Clear floats */
+            
+            
+        }
+        .cdiv4 a {
+            display: block; /* Converts inline elements to block */
+            float: left;
+             
+            
+            color: white;
+            text-decoration: none;
+            padding: 15px 20px;
+            font-size: 22px; 
+           
+        }
+        #a1{
+            float: right; /* Aligns this link to the right */
+        }
+        .cdiv4 a:hover {
+            background-color: rgb(255, 255, 255);
+            color: black;
+            cursor: pointer;
+            transform: rotate(10deg); /* Slightly rotates the link on hover */
+            
+        }
+        .cdiv5 {
+             width: 50%;
+            height: 50px;
+            
+            
+           
+            background-color: black;
+            margin-top: 20px;
+            overflow: hidden; /* Clear floats */
+            
+            
+        }
+         .cdiv5 a {
+            display:block; /* Converts inline elements to block */
+            float: left;
+             
+            
+            color: white;
+            text-decoration: none;
+            padding: 15px 20px;
+            font-size: 22px; 
+            
+           
+        }
+        #a2{
+            float: right; /* Aligns this link to the right */
+        }
+        .cdiv5 a:hover {
+            background-color: rgb(255, 255, 255);
+            color: black;
+            cursor: pointer;
+            transform: scale(1.5); /* Slightly enlarges the link on hover */
+
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="cdiv1">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Service</a>
+        <a href="#">contact us</a>
+        <a href="#">Download CV</a>
+
+    </div>
+    <div class="cdiv2">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Service</a>
+        <a href="#">contact us</a>
+        <a href="#">Download CV</a>
+        <!--this line means converting inline elemnets into block elemnets because in inline does not show height width-->
+
+    </div>
+     <div class="cdiv3">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Service</a>
+        <a href="#">contact us</a>
+        <a href="#">Download CV</a>
+        <!--this line means converting inline elemnets into block elemnets because in inline does not show height width-->
+
+    </div>
+    <div class="cdiv4">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Service</a>
+        <a href="#">contact us</a>
+        <a href="#" id="a1">Download CV</a>
+        <!--this line means converting inline elemnets into block elemnets because in inline does not show height width-->
+
+    </div>
+    <div class="cdiv5"> 
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Service</a>
+        <a href="#">contact us</a>
+        <a href="#" id="a2">Download CV</a>
+        <!--this line means converting inline elemnets into block elemnets because in inline does not show height width-->
+        
+
+    </div>
+
+
+
+</body>
+</html>
